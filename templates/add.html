@@ -1,0 +1,92 @@
+{%extends 'base.html'%}
+<title>Details</title>
+
+{%block head%}
+{%endblock%}
+
+
+
+
+
+{%block body%}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+      <form action="/addingvalidate" method="post">
+          <div class="row">
+
+               <h3> Add marks of the new student</h3>
+         </div>
+         <br>
+         <br>
+         <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                   <label for="regno">Registration Number</label>
+                    <input type="number" step="1" class="form-control"  id="regno" name="regno" min="0" max="100000" required>
+                </div>
+                <div class="form-group">
+                    <label for="sinhala">Sinhala</label>
+                    <input type="number" step="any" class="form-control" id="sinhala" name="sinhala" min="0" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="english">English</label>
+                    <input type="number" step="any" class="form-control" id="english" name="english" required min="0" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="science">Science</label>
+                    <input type="number" step="any" class="form-control" id="science" name="science" required min="0" max="100">
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+
+                <div class="form-group">
+                   <label for="maths">Maths</label>
+                    <input type="number" step="any" class="form-control" id="maths" name="maths" required min="0" max="100">
+                </div>
+                <div class="form-group">
+                   <label for="history">History</label>
+                    <input type="number" step="any" class="form-control" id="history" name="history" required min="0" max="100">
+                </div>
+                 <div class="form-group">
+                   <label for="religion">Religion</label>
+                    <input type="number" step="any" class="form-control" id="religion" name="religion" required min="0" max="100">
+                </div>
+                <div class="form-group">
+                   <label for="group1">Group 1</label>
+                    <input type="number" step="any" class="form-control" id="group1" name="group1" required min="0" max="100">
+                </div>
+
+            </div>
+
+           <div class="col-sm-4">
+
+               <div class="form-group">
+                   <label for="group2">Group 2</label>
+                    <input type="number" step="any" class="form-control" id="group2" name="group2" required min="0" max="100">
+
+              </div>
+
+               <div class="form-group">
+                   <label for="group3">Group 3</label>
+                   <input type="number" step="any" class="form-control" id="group3" name="group3"   required min="0" max="100">
+              </div>
+               <br>
+               <br>
+               <br>
+               <div class="container" align="center">
+                    <button type="submit" class="btn btn-primary">Add This Record</button>
+               </div>
+
+
+           </div>
+        </div>
+     </form>
+  </div>
+</div>
+
+
+
+{%endblock%}

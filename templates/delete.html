@@ -1,0 +1,57 @@
+{%extends 'base.html'%}
+
+
+{%block head%}
+
+<title>Home</title>
+
+{%endblock%}
+
+{%block body%}
+<div class="jumbotron jumbotron-fluid">
+                <div class="container">
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+
+
+<table align="center" cellspacing="20" cellpadding="20">
+    <tr>
+        <td>Reg No</td>
+        <td>Sinhala</td>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Science</td>
+    </tr>
+    <tr>
+        <td>{{id}}</td>
+        <td>{{sin}}</td>
+        <td>{{eng}} </td>
+        <td> {{math}}</td>
+        <td> {{sci}}</td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+        </div>
+         <div class="col-sm-6">
+
+<a style="color:white" href="/deleteconfirm/{{id}}"> <button type="button" class="btn btn-primary btn-lg" >Delete</button></a>
+
+        </div>
+    </div>
+
+</div>
+                </div>
+</div>
+
+{%endblock%}

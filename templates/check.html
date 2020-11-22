@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+
+{%block head%}
+
+<title>Home</title>
+
+{%endblock%}
+
+{%block body%}
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+    <form action="/checkvalidate" method="post">
+    <div class="row">
+        <div class="col-sm-6">
+               <div class="form-group">
+                   <label for="noofgroups"><h6>Number of groups that you want to categorise the students into</h6></label>
+                   <br>
+                   <br>
+                    <input type="number" step="1" class="form-control"  id="noofgroups" name="noofgroups" min="1" max="100" required >
+                </div>
+        </div>
+        <div class="col-sm-6">
+               <div class="container" align="center">
+                     <button type="submit" class="btn btn-primary btn-lg" >Submit</button>
+               </div>
+        </div>
+    </div>
+    </form>
+</div>
+</div>
+
+{%endblock%}

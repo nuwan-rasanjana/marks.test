@@ -1,0 +1,38 @@
+{%extends 'base.html'%}
+
+
+{%block head%}
+
+<title>result</title>
+
+{%endblock%}
+
+{%block body%}
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+<h3>Student Categories</h3>
+<br>
+  {%for j in range(0,intnoofgroups):%}
+   <h5>Group {{j+1}}</h5>
+    {%for i in range(0,(l-1)):%}
+     {%if data[i]==j:%}
+            {%print(s[i+1])%}
+            <br>
+     {%endif%}
+    {%endfor%}
+     <br>
+   {%endfor%}
+
+
+        </div>
+
+         <div class="col-sm-6">
+        <a style="color:white" href="/analyse"> <button type="button" class="btn btn-primary btn-lg" >Back</button></a>
+        </div>
+    </div>
+</div>
+</div>
+
+{%endblock%}
